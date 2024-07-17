@@ -38,9 +38,9 @@ pipeline {
         stage('Terraform Destroy') {
             steps {
                 script {
-                    // Destroy Terraform resources (optional)
-                    // Uncomment if needed with caution
-                    // sh 'terraform destroy -auto-approve'
+                    // Destroy Terraform resources (optional, use with caution)
+                    // Uncomment if needed
+                    sh 'terraform destroy -auto-approve'
                 }
             }
         }
